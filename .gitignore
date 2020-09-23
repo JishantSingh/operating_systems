@@ -1,0 +1,7 @@
+cmake-build-debug
+*.out
+another.c
+input*
+source_file
+dest_file
+.idea
