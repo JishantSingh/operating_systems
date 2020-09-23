@@ -3,4 +3,4 @@ project(sandbox C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(sandbox copyFilePosix.c)
+add_executable(sandbox copyFilePosix.c rough.c processes/fork_learn.c)
