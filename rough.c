@@ -20,8 +20,9 @@ int main(void)
     int fd2 = shm_open(TEMP_FILENAME, O_RDWR, 0777);
     int *p1, *p2;
     int buf[1024] = {0x12345678};
-
     // Write initial contents to shared memory.
+    printf("%d\n",errno);
+    printf("%d %d\n",fd1,fd2);
     write(fd1, buf, 4096);
     p1 = mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_SHARED, fd1, 0);
     printf("%d\n",errno);
