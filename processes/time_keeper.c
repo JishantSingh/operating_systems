@@ -32,7 +32,7 @@ int main(int argc, char *argv[]){
         long del = cur.tv_sec;
         del -= t->tv_sec;
         shm_unlink(name);
-        printf("%ld.%ld\n",cur.tv_sec - t->tv_sec,cur.tv_usec-t->tv_usec);
+        printf("%ld.%d\n",cur.tv_sec - t->tv_sec,cur.tv_usec-t->tv_usec);
     } else {
         printf("Error in fork");
     }
